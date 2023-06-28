@@ -1,25 +1,23 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import useScript from './hooks/useScript';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import './App.css';
+import Header from './components/pages/Home/Header';
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home/Home';
+import About from './components/pages/About';
 
 
 function App() {
-  useScript('https://platform.twitter.com/widgets.js', true);
-
   return (
     <div className="App">
+      <video src="/background_video.mp4" autoPlay loop muted/>
       <Router>
       <Navbar/>
         <Routes>
-          <Route path="/" exact />
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/about" exact element={<About/>} />
         </Routes>
       </Router>
-
-      <a class="twitter-timeline" data-height="480" data-dnt="true" data-theme="light" href="https://twitter.com/aykrishnan?ref_src=twsrc%5Etfw">
-        Tweets by @aykrishnan
-      </a>
-      {/* <script type="application/javascript" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
     </div>
   );
 }

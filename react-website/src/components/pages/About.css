@@ -1,0 +1,22 @@
+.about-me {
+    background-color: rgba(96, 96, 96, 0.6);
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+    font-size: 24px;
+    color: white;
+}
+
+.about-heading {
+    margin-top: 10%;
+    font-size: 36px;
+    text-align: center;
+}
+
+.about-image {
+    margin-top: 5%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
