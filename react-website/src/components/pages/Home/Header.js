@@ -28,7 +28,7 @@ const Header = () => {
                         <img className="header-image" src="/headshot.jpg"/>
                     </div>
                 </div>
-                <div className="buttons-container">
+                {/* <div className="buttons-container">
                     <ul className="social-media-buttons">
                         <li className="social-media-button">
                             <Link to="https://linkedin.com/in/krishananish" className="social-media-link"><i className="fa fa-linkedin-square"/> LinkedIn</Link>
@@ -43,7 +43,7 @@ const Header = () => {
                             <Link to="https://instagram.com/aykrishnan" className="social-media-link"><i className="fa fa-instagram"/> Instagram</Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     );

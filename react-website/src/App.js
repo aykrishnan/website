@@ -5,6 +5,7 @@ import Header from './components/pages/Home/Header';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
           <Route path="/about" exact element={<About/>} />
         </Routes>
       </Router>
+
+      <Footer/>
     </div>
   );
 }

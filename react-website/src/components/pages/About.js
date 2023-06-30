@@ -20,7 +20,7 @@ const About = () => {
 
         <br/>
         <div className="about-heading">What I know</div>
-        <ul style={{"list-style-type": "none"}}>
+        <ul style={{"listStyleType": "none"}}>
           <li>Programming languages: Java 11+, Kotlin (my favorite language), Python 3, JavaScript/TypeScript</li>
           <li>Frameworks: Spring Boot, Django, Flask/Chalice, Angular, React.js</li>
           <li>Cloud technologies: Google Cloud Platform, Amazon Web Services, Cloud Foundry</li>
