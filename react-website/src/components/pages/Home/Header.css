@@ -22,7 +22,7 @@
     background-color: rgba(96, 96, 96, 0.8);
     margin-top: 5%;
     padding: 2%;
-    max-width: 80%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -41,7 +41,7 @@
     display: block;
     margin-top: 5%;
     margin-left: 5%;
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
 }

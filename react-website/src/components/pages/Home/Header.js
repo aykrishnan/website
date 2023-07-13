@@ -1,10 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
 
 import './Header.css';
 
 
 const Header = () => {
+    const [screenWidth, getScreenWidth] = useState(window.innerWidth);
+    const setScreenWidth = () => getScreenWidth(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener('resize', setScreenWidth)
+
+        return(() => {
+            window.removeEventListener('resize', setScreenWidth)
+        })
+    }, [screenWidth]);
+
     return (
         <div>
             <div className="heading-container">
@@ -24,26 +34,12 @@ const Header = () => {
                         your software and implement strong long-term development practices.
                     </div>
 
+                    {screenWidth > 960 && 
                     <div>
                         <img className="header-image" src="/headshot.jpg"/>
                     </div>
+                    }
                 </div>
-                {/* <div className="buttons-container">
-                    <ul className="social-media-buttons">
-                        <li className="social-media-button">
-                            <Link to="https://linkedin.com/in/krishananish" className="social-media-link"><i className="fa fa-linkedin-square"/> LinkedIn</Link>
-                        </li>
-                        <li className="social-media-button">
-                            <Link to="https://aykrishnan.medium.com" className="social-media-link"><i className="fa fa-medium"/> Medium</Link>
-                        </li>
-                        <li className="social-media-button">
-                            <Link to="https://twitter.com/aykrishnan" className="social-media-link"><i className="fa fa-twitter"/> Twitter</Link>
-                        </li>
-                        <li className="social-media-button">
-                            <Link to="https://instagram.com/aykrishnan" className="social-media-link"><i className="fa fa-instagram"/> Instagram</Link>
-                        </li>
-                    </ul>
-                </div> */}
             </div>
         </div>
     );
