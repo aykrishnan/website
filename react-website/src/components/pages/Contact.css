@@ -1,5 +1,5 @@
 .contact-page {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .contact-header {
@@ -36,6 +36,32 @@
     padding-left: 8px;
     padding-right: 8px;
     margin-top: 4px;
+    margin-bottom: 8px;
     border-radius: 4px;
     border: 0;
+}
+
+.thank-you {
+    color: white;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contact-addendum {
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: rgba(96, 96, 96, 0.8);
 }
