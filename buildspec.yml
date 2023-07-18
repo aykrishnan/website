@@ -7,12 +7,22 @@ phases:
 
     commands:
       # Install dependencies
+      - cd react-website
       - npm install
+
+  pre_build:
+    commands:
+      - cd ..
 
   build:
     commands:
-      # run build script
+      # Run build script
+      - cd react-website
       - npm run build
+  
+  post_build:
+    commands:
+      - cd ..
 
 artifacts:
   # include all files required to run application
