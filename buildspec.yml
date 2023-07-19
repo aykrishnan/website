@@ -21,12 +21,18 @@ phases:
       - npm run build
   
   post_build:
-    commands:
-      - cd ..
+   commands:
+     - pwd
+     - ls
+  #     - cd ..
 
 artifacts:
   # include all files required to run application
   # we include only the static build files
   files:
-    - '**/*'
-  base-directory: 'build'
+    - 'react-website/public/**/*'
+    - 'react-website/src/**/*'
+    - 'react-website/package.json'
+    # - '**/*'
+
+  # base-directory: 'build'
