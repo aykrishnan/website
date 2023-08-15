@@ -10,29 +10,18 @@ phases:
       - cd react-website
       - npm install
 
-  pre_build:
-    commands:
-      - cd ..
-
   build:
     commands:
       # Run build script
-      - cd react-website
       - npm run build
-  
-  post_build:
-   commands:
-     - pwd
-     - ls
-  #     - cd ..
+      - pwd
+      - ls
 
 artifacts:
-  # include all files required to run application
-  # we include only the static build files
   files:
-    - 'react-website/public/**/*'
-    - 'react-website/src/**/*'
-    - 'react-website/package.json'
-    # - '**/*'
+    # - 'react-website/public/**/*'
+    # - 'react-website/src/**/*'
+    # - 'react-website/package.json'
+    - '**/*'
 
-  # base-directory: 'build'
+  # base-directory: build
