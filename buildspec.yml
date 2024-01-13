@@ -22,7 +22,6 @@ artifacts:
     - src/**/*
     - package.json
     - scripts/**/*
-    # - build/**/*
-    - index.html
+    - build/**/*
 
-  # base-directory: build
+  base-directory: build
