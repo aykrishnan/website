@@ -7,7 +7,6 @@ phases:
 
     commands:
       # Install dependencies
-      - cd react-website
       - npm install
 
   build:
@@ -19,9 +18,9 @@ phases:
 
 artifacts:
   files:
-    # - 'react-website/public/**/*'
-    # - 'react-website/src/**/*'
-    # - 'react-website/package.json'
-    - '**/*'
+    - public/**/*
+    - src/**/*
+    - package.json
+    - scripts/**/*
 
   # base-directory: build
