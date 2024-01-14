@@ -9,20 +9,19 @@ phases:
       # Install dependencies
       - npm install
 
+      # Install yarn
+      - echo installing yarn
+      - npm install yarn
+      - yarn add eslint-config-react-app
+
   build:
     commands:
-      # Run build script
-      - npm run build
-      - pwd
-      - ls
+      - echo Building...
+      - yarn build
 
 artifacts:
   files:
-    - public/**/*
-    - src/**/*
-    - package.json
-    - scripts/**/*
-    - build/*
+    - "**/*"
 
-  discard-paths: no
+  # discard-paths: yes
   base-directory: build
