@@ -10,8 +10,8 @@ import Contact from './components/pages/Contact';
 
 function App() {
   return (
-    <>
-      <video src="/background_video.mp4" autoPlay loop muted/>
+    <div className="app">
+      <video disablePictureInPicture src="/background_video.mp4" autoPlay loop muted/>
       <Router>
       <Navbar/>
         <Routes>
@@ -22,7 +22,7 @@ function App() {
       </Router>
 
       <Footer/>
-    </>
+    </div>
   );
 }
 

@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="buttons-container">
                     <ul className="social-media-buttons">
                         <li className="social-media-button">
-                            <Link to="https://linkedin.com/in/krishananish" className="social-media-link"><i className="fa fa-linkedin-square"/> LinkedIn</Link>
+                            <Link to="https://linkedin.com/in/krishnananish" className="social-media-link"><i className="fa fa-linkedin-square"/> LinkedIn</Link>
                         </li>
                         <li className="social-media-button">
                             <Link to="https://aykrishnan.medium.com" className="social-media-link"><i className="fa fa-medium"/> Medium</Link>

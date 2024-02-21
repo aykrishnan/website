@@ -1,7 +1,7 @@
 .footer {
-    /* background-color: dimgray; */
+    /* background-color: dimgray;
     background-color: rgba(105, 105, 105, 0.6);
-    /* opacity: 0.6; */
+    opacity: 0.6;
     height: 44px;
     max-width: 450px;
     display: flex;
@@ -11,7 +11,19 @@
     position: sticky;
     bottom: 0;
     border-radius: 6px;
-    z-index: 999;
+    z-index: 999; */
+    /* position: sticky;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 25px 0;
   }
 
 .buttons-container {
@@ -42,10 +54,10 @@
 }
 
 .social-media-link {
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: lightgray;
     text-decoration: none;
     border-radius: 4px;

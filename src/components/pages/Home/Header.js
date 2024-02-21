@@ -21,10 +21,15 @@ const Header = () => {
                 <div className="main-heading">
                     Anísh Krishnan
                 </div>
-
                 <div className="subtitle">
                     Software engineer, technical lead, and solutions architect
                 </div>
+
+                {/* {screenWidth > 960 &&  */}
+                    <div>
+                        <img className="header-image" src="/headshot.jpg"/>
+                    </div>
+                {/* } */}
 
                 <div className="bio-container">
                     <div className="bio">
@@ -33,12 +38,6 @@ const Header = () => {
                         as well as experience successfully leading development teams, I can help improve and scale
                         your software and implement strong long-term development practices.
                     </div>
-
-                    {screenWidth > 960 && 
-                    <div>
-                        <img className="header-image" src="/headshot.jpg"/>
-                    </div>
-                    }
                 </div>
             </div>
         </div>

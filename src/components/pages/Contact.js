@@ -48,7 +48,7 @@ const Contact = () => {
                         data-sitekey="reCAPTCHA_site_key" 
                         data-callback="onSubmit"
                         data-action="submit">
-                        <i class="fa-solid fa-paper-plane"></i> Submit
+                        <i className="fa-solid fa-paper-plane"></i> Submit
                       </button>
                     }
 

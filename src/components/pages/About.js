@@ -6,6 +6,7 @@ import './About.css'
 const About = () => {
   return (
     <div className="about-me">
+        <div className="about-main-header">About Me</div>
         <div className="about-heading">What I do</div>
         I started my professional journey by pursuing a MS in Computer Science at DePaul, having recently decided that law school was not the next step in my path.
         I graduated in 2018, while working at a Chicago-based EdTech startup. By this time,
@@ -21,9 +22,10 @@ const About = () => {
         <br/>
         <div className="about-heading">What I know</div>
         <ul style={{"listStyleType": "none"}}>
-          <li>Programming languages: Java 11+, Kotlin (my favorite language), Python 3, JavaScript/TypeScript</li>
+          <li>Programming languages: Kotlin, Python 3, Java 11+, JavaScript/TypeScript</li>
           <li>Frameworks: Spring Boot, Django, Flask/Chalice, Angular, React.js</li>
           <li>Cloud technologies: Google Cloud Platform, Amazon Web Services, Cloud Foundry</li>
+          <li>Languages: English (native/fluent), Spanish (intermediate)</li>
           <li>Other skills: Mentorship, event organizing and hosting, Agile software development</li>
         </ul>
 
