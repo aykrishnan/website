@@ -35,6 +35,11 @@ const Contact = () => {
             <div className="contact-header">
                 Contact Me
             </div>
+            <div className="contact-description">
+                Feel free to reach out to me for business inquiries. Please provide any information you believe will be helpful
+                (e.g., project details, technical requirements, budgetary constraints, timeline, etc.).
+                I will do my best to reply to you in a timely fashion.
+            </div>
             <div className="contact-form">
                 <form id="contact-form" ref={form} onSubmit={sendEmail} method="POST">
                     <input type="text" id="name_field" name="user_name" placeholder="Name" className="contact-input"/>
@@ -51,13 +56,7 @@ const Contact = () => {
                         <i className="fa-solid fa-paper-plane"></i> Submit
                       </button>
                     }
-
                 </form>
-            </div>
-            <div className="contact-addendum">
-                Feel free to reach out to me for business inquiries. Please provide any information you believe will be helpful
-                (e.g., project details, technical requirements, budgetary constraints, timeline, etc.).
-                I will do my best to reply to you in a timely fashion.
             </div>
         </div>
     );
