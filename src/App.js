@@ -11,7 +11,7 @@ import Contact from './components/pages/Contact';
 function App() {
   return (
     <div className="app">
-      <video disablePictureInPicture src="/background_video.mp4" autoPlay loop muted/>
+      <video disablePictureInPicture preload="none" src="/background_video.mp4" autoPlay loop muted/>
       <Router>
       <Navbar/>
         <Routes>
